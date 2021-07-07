@@ -19,18 +19,15 @@
     transition: all 0.3s ease;
     overflow: hidden;
   }
+
+  &__item:nth-child(1) {
+    grid-column: 1 / -1;
+  }
+
   &__photo {
     display: block;
     width: 100%;
     transition: all 0.3s ease;
-
-    @include responsive(tab-hor) {
-      height: 25.1rem;
-    }
-
-    @include responsive(tab-ver) {
-      height: auto;
-    }
   }
   &__caption {
     position: absolute;
